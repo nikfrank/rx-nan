@@ -9,18 +9,10 @@
   height: auto;
 }
 
-.overlay {
-  position:absolute;
-  top:0;
-  bottom: auto;
-  left:0;
-  right:0;
+.carousel:hover {
   height: 100%;
-  opacity: .2;
-  transition: .7s ease;
-  background-color: #ddcf9d;
-}
-
-.carousel:hover .overlay {
-  opacity: .5;
-}
+  opacity: .8;
+  transition: .5s ease;
+  filter: grayscale(100%);
+  filter: contrast(65%);
+    }
