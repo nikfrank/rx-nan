@@ -4,7 +4,8 @@ import typewriter from './typewriter.jpg';
 import record from './record.jpg';
 import train from './train.jpg';
 import feynman from './feynman.png';
-import './Carousel.css'
+import './Carousel.css';
+
 class Carousel extends React.Component {
   render() {
     var settings = {
