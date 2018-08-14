@@ -15,21 +15,23 @@ class Carousel extends React.Component {
       slidesToScroll: 1,
       className: 'carousel',
     };
-    
+
     return (
       <Slider {...settings}>
+
           <div>
             <img src={typewriter} alt='typewriter'/>
           </div>
           <div>
             <img src={record} alt='record'/>
-          </div>        
+          </div>
           <div>
             <img src={feynman} alt='Dr Richard Feynman'/>
           </div>
           <div>
             <img src={train} alt='train'/>
           </div>
+      
       </Slider>
     );
   }
