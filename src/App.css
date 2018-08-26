@@ -1,9 +1,11 @@
-
-
 .App {
   text-align: center;
 }
 
+.App h1 {
+  margin-top: 35px;
+  font-size: 2.8em;
+}
 
 .App-header {
   background-color: #222;
@@ -30,9 +32,9 @@
 }
 
 .company-blurb {
-    width: 55vw;
-left: 0;
-  }
+  width: 55vw;
+  left: 0;
+}
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
@@ -40,16 +42,15 @@ left: 0;
 }
 
 h1 {
-font-family: 'Permanent Marker', cursive;
-  }
+  font-family: 'Permanent Marker', cursive;
+}
 
 nav {
   height: 50px;
-  width: 100vw;
+  width: 90vw;
   display: flex;
   flex-direction: row;
   position: sticky;
-  border: 2px solid red;
 }
 
 
@@ -67,16 +68,24 @@ nav {
 }
 
 nav a{
-  padding: 20px;
+  padding: 20px 8.5px 20px 15px;
   line-height: 25px;
   font-family: 'Playfair Display', serif;
   font-size: 20px;
   opacity: 0.6;
   text-decoration: none;
-
 }
+
+nav a:not(:first-child){
+  padding-top: 21px;
+}
+
 nav a:hover {
-  opacity: 1
+  opacity: 1;
+}
+
+nav a:visited {
+  color: rgb(85, 26, 139)  
 }
 
 
