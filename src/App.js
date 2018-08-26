@@ -18,27 +18,28 @@ import NoMatch from './NoMatch';
 class App extends Component {
   render() {
     return (
- <Router>
-      <div className="App">
-        <nav>
-          <NavLink to = "/home"><div className="logo">CapsLok</div></NavLink>
-          <NavLink to ="/work"><div>work</div></NavLink>
-          <NavLink to="/about"><div>about</div></NavLink>
-          <NavLink to ="contact"><div>contact</div></NavLink>
-        </nav>
-        <Carousel className='home-carousel'/>
-        <h1>CapsLok</h1>
+      <Router>
+        <div className="App">
+          <nav>
+            <NavLink to = "/home"><div className="logo">CapsLok</div></NavLink>
+            <NavLink to ="/work"><div>work</div></NavLink>
+            <NavLink to="/about"><div>about</div></NavLink>
+            <NavLink to ="contact"><div>contact</div></NavLink>
+          </nav>
+          <Carousel className='home-carousel'/>
+          <h1>CapsLok</h1>
 
-      <Switch>
-          <Route exact path="/home" component= {Home}/>
-          <Route exact path="/work" component= {Work}/>
-          <Route exact path="/about" component= {About}/>
-          <Route exact path="contact" component= {Contact}/>
-          <Route path="noMatch" component= {NoMatch}/>
-
-        </Switch>
-      </div>
-    </Router>
+          
+          <Switch>
+            <Route exact path="/home" component= {Home}/>
+            <Route exact path="/work" component= {Work}/>
+            <Route exact path="/about" component= {About}/>
+            <Route exact path="contact" component= {Contact}/>
+            <Route path="noMatch" component= {NoMatch}/>
+            
+          </Switch>
+        </div>
+      </Router>
     );
   }
 }

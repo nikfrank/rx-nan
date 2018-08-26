@@ -8,13 +8,8 @@
   width: 75vw;
   max-width: 80%;
   height: auto;
-
 }
 
-.carousel:hover {
-  height: 100%;
-  opacity: .8;
-  transition: .5s ease;
-  filter: grayscale(100%);
-  filter: contrast(65%);
-    }
+.slick-list *:focus {
+  outline: none;
+}
