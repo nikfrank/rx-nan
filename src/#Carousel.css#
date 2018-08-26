@@ -12,18 +12,3 @@
 .slick-slider *:focus {
   outline: none;
 }
-
-.about-jacob {
-  display: flex;
-  flex-direction: row;
-}
-
-.about-moran {
-  display: flex;
-  flex-direction: row;
-}
-
-.about-ferkin {
-  display: flex;
-  flex-direction: row;
-}

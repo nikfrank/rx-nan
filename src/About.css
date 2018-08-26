@@ -1,0 +1,56 @@
+.about-tile {
+  position: absolute;
+  width: 45vw;
+  left: 25vw;
+  background-color: #eeeeee;
+}
+
+
+.about-img-div {
+  height: 100px;
+  width: 100px;
+  position: relative;
+  overflow: hidden;
+  
+  border-radius: 50%;
+}
+
+.about-img-div img{
+  display: inline;
+  margin: 0 auto;
+  margin-left: -25%;
+  height: 100%;
+  width: auto;
+}
+
+.about-tile ul{
+  padding-left: none;
+}
+
+.about-tile li{
+  list-style: none;
+}
+
+.about-jacob {
+  display: flex;
+  flex-direction: row;
+}
+
+.about-jacob li{
+  padding-left: 10vw;
+}
+
+.about-moran {
+  display: flex;
+  flex-direction: row;
+}
+
+.about-ferkin {
+  display: flex;
+  flex-direction: row;
+}
+
+.about-ferkin li{
+  padding-left: 10vw;
+}
+
