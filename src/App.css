@@ -1,11 +1,9 @@
+
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
 
 .App-header {
   background-color: #222;
@@ -23,10 +21,18 @@
 }
 
 .blurb {
-  max-width: 60%;
+  width: 60vw;
   display: flex;
+  flex-direction: row;
+  align-items: center;
   justify-content: center;
+  padding-left: 20vw;
 }
+
+.company-blurb {
+    width: 55vw;
+left: 0;
+  }
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
@@ -37,6 +43,43 @@ h1 {
 font-family: 'Permanent Marker', cursive;
   }
 
+nav {
+  height: 50px;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  position: sticky;
+}
+
+NavLink {
+  padding: 20px;
+  line-height: 25px;
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  opacity: 0.6;
+}
+
+navLink:hover {
+  opacity: 1
+}
+
+.logo {
+  padding-left: 11vw;
+  padding-right: 51vw;
+  width: 80px;
+  font-family: 'Permanent Marker';
+  font-size: 30px;
+  opacity: 1;
+}
+
+.logo:hover{
+  color: #871429;
+}
+
 p {
   font-family: 'Playfair Display', serif;
-  }
+}
+
+.home-carousel {
+  user-select: none;
+}

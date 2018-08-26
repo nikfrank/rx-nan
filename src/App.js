@@ -1,18 +1,44 @@
 import React, { Component } from 'react';
 import './App.css';
-import Carousel from './Carousel'
+import Carousel from './Carousel';
+import {
+Route,
+NavLink,
+BrowserRouter as Router,
+Switch,
+} from 'react-router-dom';
+import Home from './Home';
+import Work from './Work';
+import About from './About';
+import Contact from './Contact';
+import NoMatch from './NoMatch';
+
+
 
 class App extends Component {
   render() {
     return (
+ <Router>
       <div className="App">
-        <Carousel />
-        <h1>do you like this font fucktard? </h1>
-        <div class = "blurb">
-        <p> we design working pages for working folks who make products for the people. every step in our process ensures that the end user enjoys the experience of using your site. we do this by paying attention to the details and adhering to our primary principle that form must follow function. </p>
-        </div>
-    </div>
+        <nav>
+          <NavLink to = "/home"><div className="logo">CapsLok</div></NavLink>
+          <NavLink to ="/work"><div>work</div></NavLink>
+          <NavLink to="/about"><div>about</div></NavLink>
+          <NavLink to ="contact"><div>contact</div></NavLink>
+        </nav>
+        <Carousel className='home-carousel'/>
+        <h1>CapsLok</h1>
 
+      <Switch>
+          <Route exact path="/home" component= {Home}/>
+          <Route exact path="/work" component= {Work}/>
+          <Route exact path="/about" component= {About}/>
+          <Route exact path="contact" component= {Contact}/>
+          <Route path="noMatch" component= {NoMatch}/>
+
+        </Switch>
+      </div>
+    </Router>
     );
   }
 }

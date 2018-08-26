@@ -1,9 +1,9 @@
 import React from 'react';
 import Slider from 'react-slick';
-import typewriter from './typewriter.jpg';
-import record from './record.jpg';
-import train from './train.jpg';
-import feynman from './feynman.png';
+import typewriter from './typewriterFix.jpg';
+import record from './recordFix.jpg';
+import train from './trainFix.jpg';
+import feynman from './feynmanFix.jpg';
 import './Carousel.css';
 
 class Carousel extends React.Component {
@@ -32,7 +32,7 @@ class Carousel extends React.Component {
           <div>
             <img src={train} alt='train'/>
           </div>
-      
+
       </Slider>
     );
   }

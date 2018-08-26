@@ -1,0 +1,21 @@
+* {
+  border: 1px green solid;
+}
+
+.header-container{
+  position: fixed;
+  display: flex;
+  font-size: 40px;
+  top: 0;
+  flex-direction: row;
+  justify-content: space-around;
+  background: transparent;
+}
+
+.header-contrainer button{
+  font-family: 'Permanent Marker', cursive;
+  background: transparent;
+  height: 10vh;
+  color: white;
+  left: 10vw;
+}

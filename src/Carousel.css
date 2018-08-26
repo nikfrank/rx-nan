@@ -5,8 +5,10 @@
   top: 0px;
   opacity: 1;
   filter: grayscale(75%);
+  width: 75vw;
   max-width: 80%;
   height: auto;
+
 }
 
 .carousel:hover {
