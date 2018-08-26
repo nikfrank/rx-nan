@@ -51,17 +51,6 @@ nav {
   position: sticky;
 }
 
-NavLink {
-  padding: 20px;
-  line-height: 25px;
-  font-family: 'Playfair Display', serif;
-  font-size: 20px;
-  opacity: 0.6;
-}
-
-navLink:hover {
-  opacity: 1
-}
 
 .logo {
   padding-left: 11vw;
@@ -74,6 +63,18 @@ navLink:hover {
 
 .logo:hover{
   color: #871429;
+}
+
+nav a{
+  padding: 20px;
+  line-height: 25px;
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  opacity: 0.6;
+  text-decoration: none;
+}
+nav a:hover {
+  opacity: 1
 }
 
 p {
