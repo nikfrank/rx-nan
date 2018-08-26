@@ -1,12 +1,14 @@
 import React, {Component} from 'react';
 import typewriter from './typewriterFix.jpg';
 import './About.css';
+import ferkin from './ferkin.jpeg';
 
 class About extends Component {
   render() {
     return(
-      <div className='about-tile'>
-        <div className='about-jacob'>
+      <div className='about-tiles'>
+
+        <div className='about-jacob about-tile'>
           <div className='about-img-div'>
             <img src={typewriter} alt='temporary img'/>
           </div>
@@ -16,8 +18,10 @@ class About extends Component {
             <li>Helps blind children</li>
           </ul>
         </div>
+
+        <div className='about-page-border-1' />
         
-        <div className='about-moran'>
+        <div className='about-moran about-tile'>
           <ul>
             <li><h2>Moran Forial</h2></li>
             <li><h3>VP Human Resources</h3></li>
@@ -27,13 +31,15 @@ class About extends Component {
             <img src={typewriter} alt='temporary img'/>
           </div>
         </div>
+
+        <div className='about-page-border-2'/>
         
-        <div className='about-ferkin'>
+        <div className='about-ferkin about-tile'>
           <div className='about-img-div'>
-            <img src={typewriter} alt='temporary img'/>
+            <img src={ferkin} alt='temporary img'/>
           </div>
           <ul>
-            <li><h2>Ferkin Yermum</h2></li>
+            <li><h2>Ferkin Yermim</h2></li>
             <li><h3>CTO</h3></li>
             <li>literally doesn't care about anything</li>
           </ul>
@@ -44,4 +50,5 @@ class About extends Component {
     );
   }
 }
+
 export default About;
