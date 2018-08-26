@@ -49,6 +49,7 @@ nav {
   display: flex;
   flex-direction: row;
   position: sticky;
+  border: 2px solid red;
 }
 
 
@@ -72,10 +73,12 @@ nav a{
   font-size: 20px;
   opacity: 0.6;
   text-decoration: none;
+
 }
 nav a:hover {
   opacity: 1
 }
+
 
 p {
   font-family: 'Playfair Display', serif;
