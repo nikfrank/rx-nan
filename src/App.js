@@ -29,7 +29,6 @@ class App extends Component {
           <Carousel className='home-carousel'/>
           <h1>CapsLok</h1>
 
-<<<<<<< HEAD
       <Switch>
           <Route exact path="/home" component={Home}/>
           <Route exact path="/work" component={Work}/>
@@ -40,19 +39,6 @@ class App extends Component {
         </Switch>
       </div>
     </Router>
-=======
-          
-          <Switch>
-            <Route exact path="/home" component= {Home}/>
-            <Route exact path="/work" component= {Work}/>
-            <Route exact path="/about" component= {About}/>
-            <Route exact path="contact" component= {Contact}/>
-            <Route path="noMatch" component= {NoMatch}/>
-            
-          </Switch>
-        </div>
-      </Router>
->>>>>>> fixes
     );
   }
 }
