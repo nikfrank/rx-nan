@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Slider from 'react-slick';
 import typewriter from './typewriterFix.jpg';
 import record from './recordFix.jpg';
@@ -6,19 +6,21 @@ import train from './trainFix.jpg';
 import feynman from './feynmanFix.jpg';
 import './Carousel.css';
 
-class Carousel extends React.Component {
-  render() {
-    var settings = {
-      dots: true,
-      infinite: true,
-      speed: 100,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      className: 'carousel',
-    };
+class Carousel extends Component {
+  static defaultProps = {
+    dots: true,
+    infinite: true,
+    speed: 100,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    className: 'carousel',
+  };
 
+  render() {
+    const { ...sliderProps } = this.props;
+    
     return (
-      <Slider {...settings}>
+      <Slider {...sliderProps}>
 
           <div>
             <img src={typewriter} alt='typewriter'/>
