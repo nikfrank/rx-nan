@@ -32,7 +32,7 @@
     color:red;
 }
 .form-style-2 .tel-number-field{
-    width: 40px;
+    width: 55px;
     text-align: center;
 }
 .form-style-2 input.input-field, .form-style-2 .select-field{
@@ -72,6 +72,7 @@
     border-radius: 3px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
+    cursor:pointer;
 
 }
 .form-style-2 input[type=submit]:hover,
@@ -88,4 +89,14 @@
 .wider {
   width: 40vw;
   border: 10px solid red;
+}
+
+.emailRetry {
+  padding-left: 100px;
+  color: red;
+  font-weight: 600;
+  margin: 16px;
+  box-sizing: border-box;
+  border-bottom: .8px dotted #f2f2f2;
+
 }

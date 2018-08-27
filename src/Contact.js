@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import './ContactForm.css';
 
 class Contact extends Component {
-    state = {userName: '',
+    state = { userName: '',
               email: '',
               telNo1: '',
               telNo2: '',
@@ -11,7 +11,11 @@ class Contact extends Component {
         }
 
     setUserName = (event)=> this.setState({userName: event.target.value});
-    setEmail = (event)=> this.setState({email: event.target.value});
+    setEmail = ({ target: {value} })=>
+        this.setState({
+        email: value,
+        isEmailValid: value.includes('@' && '.co')
+              })
     setTelNo1 = (event)=> this.setState({ telNo1: event.target.value });
     setTelNo2 = (event)=> this.setState({ telNo2: event.target.value });
     setTelNo3 = (event)=> this.setState({ telNo3: event.target.value });
@@ -40,11 +44,21 @@ class Contact extends Component {
                 <input type="text" className="input-field wider" name="field2" onChange={this.setEmail} value={email} />
               </label>
 
+              {
+                !this.state.isEmailValid ? (
+                  <div className='emailInvalid'>
+                    <div className='emailRetry'>
+                      Please enter your email address
+                    </div>
+                  </div>
+                ) :null
+              }
+
               <label>
                 <span>Telephone</span>
-                <input type="text" className="tel-number-field" name="tel_no_1" onChange={this.setTelNo1} value={telNo1} maxLength="4" />-
-                <input type="text" className="tel-number-field" name="tel_no_2" onChange={this.setTelNo2} value={telNo2} maxLength="4"  />-
-                <input type="text" className="tel-number-field" name="tel_no_3" onChange={this.setTelNo3} value={telNo3} maxLength="10"  />
+                <input type="text" className="tel-number-field" name="tel_no_1" onChange={this.setTelNo1} value={telNo1} maxLength="3" />-
+                <input type="text" className="tel-number-field" name="tel_no_2" onChange={this.setTelNo2} value={telNo2} maxLength="3"  />-
+                <input type="text" className="tel-number-field" name="tel_no_3" onChange={this.setTelNo3} value={telNo3} maxLength="4"  />
               </label>
 
               <label htmlFor="field4">
