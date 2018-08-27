@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import typewriter from './typewriterFix.jpg';
 import './About.css';
-import ferkin from './ferkin.jpeg';
 
 class About extends Component {
   render() {
@@ -36,7 +35,7 @@ class About extends Component {
         
         <div className='about-ferkin about-tile'>
           <div className='about-img-div'>
-            <img src={ferkin} alt='temporary img'/>
+            <img src={typewriter} alt='temporary img'/>
           </div>
           <ul>
             <li><h2>Ferkin Yermim</h2></li>

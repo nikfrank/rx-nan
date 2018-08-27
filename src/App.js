@@ -21,10 +21,11 @@ class App extends Component {
       <Router>
         <div className="App">
           <nav>
-            <NavLink to="/home"><div className="logo">CapsLok</div></NavLink>
-            <NavLink to="/work"><div>work</div></NavLink>
-            <NavLink to="/about"><div>about</div></NavLink>
+            <NavLink to="/home"><div className="logo">RX-nan</div></NavLink>
+            <NavLink to="/about"><div>The issues</div></NavLink>
+            
             <NavLink to="/contact"><div>contact</div></NavLink>
+            <NavLink to="/contact"><div>doctors</div></NavLink>
           </nav>
           <Switch>
             <Route exact path="/home" component={Home}/>
@@ -32,7 +33,6 @@ class App extends Component {
             <Route exact path="/about" component={About}/>
             <Route exact path="/contact" component={Contact}/>
             <Redirect from='/' to='/home'/>
-
           </Switch>
         </div>
       </Router>

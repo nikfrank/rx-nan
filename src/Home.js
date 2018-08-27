@@ -6,14 +6,13 @@ class Home extends Component{
     return(
       <div>
         <Carousel className='home-carousel'/>
-        <h1>CapsLok</h1>
-
-        <div className = "blurb">
-          <p className="company-blurb"> we design working pages for working
-            folks who make products for the people. every step in our process
-            ensures that the end user enjoys the experience of using your site.
-            we do this by paying attention to the details and adhering to our
-            primary principle that form must follow function. </p>
+        <h1>RX-nan</h1>
+        <div className = "blurb" style={{backgroundColor:'black'}}>
+          <div style={{color:'#C3C3E6'}}>#C3C3E6</div>
+          <div style={{color:'#A93F55'}}>#A93F55</div>
+          <div style={{color:'#13505B'}}>#13505B</div>
+          <div style={{color:'#dddddd'}}>#dddddd</div>
+          <div style={{color:'#F3F7F0'}}>#F3F7F0</div>
         </div>
       </div>
     );
