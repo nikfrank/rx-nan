@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
-import Carousel from './Carousel';
 
 class Home extends Component{
   render(){
     return(
       <div className='page'>
-        
         
         <div className = "blurb" style={{backgroundColor:'black'}}>
           <div style={{color:'#C3C3E6'}}>#C3C3E6</div>
