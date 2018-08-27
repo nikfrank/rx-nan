@@ -5,7 +5,8 @@ class Home extends Component{
   render(){
     return(
       <div className='page'>
-        <h1>RX-nan</h1>
+        
+        
         <div className = "blurb" style={{backgroundColor:'black'}}>
           <div style={{color:'#C3C3E6'}}>#C3C3E6</div>
           <div style={{color:'#A93F55'}}>#A93F55</div>
