@@ -17,22 +17,11 @@ const website_design = 1;
 
 class Work extends Component {
 
-  state = {
-    readMore: false,
-  };
-  
-   setReadMore = (website_design) => {  
-    this.setState((state) => ({
-      readMore: website_design || false,    
-    }) )
-  };
-
   
   render() {
     console.log(this.state)
     return(
       <div className='page'>
-               
       </div>
 
     );
