@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-
 import './Issues.css';
 
 class Issues extends Component {
