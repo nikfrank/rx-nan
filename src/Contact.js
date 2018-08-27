@@ -25,7 +25,7 @@ class Contact extends Component {
      const { userName, email, telNo1, telNo2, telNo3, message } = this.state;
 
     return(
-      <div>
+      <div className='page'>
         <div className="form-container">
           <div className="form-style-2">
             <div className="form-style-2-heading">One huge step towards building your brand...</div>

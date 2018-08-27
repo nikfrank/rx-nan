@@ -9,7 +9,7 @@ Redirect,
 } from 'react-router-dom';
 import Home from './Home';
 import Work from './Work';
-import About from './About';
+import Issues from './Issues';
 import Contact from './Contact';
 
 
@@ -19,18 +19,18 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <div className="App">
+        <div className="App page">
           <nav>
             <NavLink to="/home"><div className="logo">RX-nan</div></NavLink>
-            <NavLink to="/about"><div>The issues</div></NavLink>
+            <NavLink to="/issues"><div>The Issues</div></NavLink>
             
-            <NavLink to="/contact"><div>contact</div></NavLink>
-            <NavLink to="/contact"><div>doctors</div></NavLink>
+            <NavLink to="/contact"><div>Contact</div></NavLink>
+            <NavLink to="/contact"><div>Doctors</div></NavLink>
           </nav>
           <Switch>
             <Route exact path="/home" component={Home}/>
             <Route exact path="/work" component={Work}/>
-            <Route exact path="/about" component={About}/>
+            <Route exact path="/issues" component={Issues}/>
             <Route exact path="/contact" component={Contact}/>
             <Redirect from='/' to='/home'/>
           </Switch>

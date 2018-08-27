@@ -32,7 +32,7 @@ class Work extends Component {
   render() {
     console.log(this.state)
     return(
-      <div>
+      <div className='page'>
 
         <img src={typewriter} onClick={()=>this.setReadMore(true)}/>
         
