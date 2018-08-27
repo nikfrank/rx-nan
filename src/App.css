@@ -52,6 +52,7 @@ nav {
   display: flex;
   flex-direction: row;
   position: sticky;
+  margin-bottom: 1.5%; 
 }
 
 
