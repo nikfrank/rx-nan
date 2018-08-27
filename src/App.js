@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './App.css';
-import Carousel from './Carousel';
 import {
 Route,
 NavLink,
@@ -26,19 +25,17 @@ class App extends Component {
             <NavLink to="/about"><div>about</div></NavLink>
             <NavLink to ="contact"><div>contact</div></NavLink>
           </nav>
-          <Carousel className='home-carousel'/>
-          <h1>CapsLok</h1>
 
-      <Switch>
-          <Route exact path="/home" component={Home}/>
-          <Route exact path="/work" component={Work}/>
-          <Route exact path="/about" component={About}/>
-          <Route exact path="/contact" component={Contact}/>
+          <Switch>
+            <Route exact path="/home" component={Home}/>
+            <Route exact path="/work" component={Work}/>
+            <Route exact path="/about" component={About}/>
+            <Route exact path="/contact" component={Contact}/>
 
 
-        </Switch>
-      </div>
-    </Router>
+          </Switch>
+        </div>
+      </Router>
     );
   }
 }
