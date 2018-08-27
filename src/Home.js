@@ -4,7 +4,7 @@ import Carousel from './Carousel';
 class Home extends Component{
   render(){
     return(
-      <div>
+      <div className='page'>
         <h1>RX-nan</h1>
         <div className = "blurb" style={{backgroundColor:'black'}}>
           <div style={{color:'#C3C3E6'}}>#C3C3E6</div>
