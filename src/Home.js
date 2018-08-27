@@ -5,7 +5,6 @@ class Home extends Component{
   render(){
     return(
       <div>
-        <Carousel className='home-carousel'/>
         <h1>RX-nan</h1>
         <div className = "blurb" style={{backgroundColor:'black'}}>
           <div style={{color:'#C3C3E6'}}>#C3C3E6</div>
