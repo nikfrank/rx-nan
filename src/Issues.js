@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import typewriter from './typewriterFix.jpg';
 import './Issues.css';
 
 class Issues extends Component {
@@ -10,7 +9,7 @@ class Issues extends Component {
 
           <div className='about-jacob about-tile'>
             <div className='about-img-div'>
-              <img src={typewriter} alt='temporary img'/>
+
             </div>
             <ul>
               <li><h2>Jacob Mirrage</h2></li>
@@ -28,7 +27,7 @@ class Issues extends Component {
               <li>Helps cure the blind children that Jacob keeps fucking up</li>
             </ul>
             <div className='about-img-div'>
-              <img src={typewriter} alt='temporary img'/>
+
             </div>
           </div>
 
@@ -36,7 +35,7 @@ class Issues extends Component {
           
           <div className='about-ferkin about-tile'>
             <div className='about-img-div'>
-              <img src={typewriter} alt='temporary img'/>
+
             </div>
             <ul>
               <li><h2>Ferkin Yermim</h2></li>
