@@ -1,3 +1,4 @@
+
 .home-carousel img {
   display: block;
   margin-left: auto;
@@ -7,6 +8,8 @@
   width: 75vw;
   max-width: 80%;
   height: auto;
+  box-shadow: 1px 1px 12px 0 #bbbbbb;
+  border-radius: 1px;
 }
 
 .slick-slider *:focus {
