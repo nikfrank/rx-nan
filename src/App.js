@@ -22,10 +22,8 @@ class App extends Component {
         <div className="App page">
           <nav>
             <NavLink to="/home"><div className="logo">RX-nan</div></NavLink>
-            <NavLink to="/issues"><div>The Issues</div></NavLink>
-            
+            <NavLink to="/issues"><div>The Issues</div></NavLink>            
             <NavLink to="/contact"><div>Contact</div></NavLink>
-            <NavLink to="/contact"><div>Doctors</div></NavLink>
           </nav>
           <Switch>
             <Route exact path="/home" component={Home}/>
