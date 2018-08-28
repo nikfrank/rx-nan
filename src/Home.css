@@ -18,28 +18,13 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: baseline;
 }
 
 .home-moran img{
   width:auto;
-  height: 20vh;
-}
-
-.home-tiles ul {
-  margin-top: 11.5vh;
-}
-
-.home-img-div img{
-  display: inline;
-  margin: 0 auto;
-  margin-left: -25%;
-  height: 100%;
-  width: auto;
-}
-
-.home-tiles ul{
-  width: 50%;
-  padding-left: none;
+  height: 15vh;
+  padding: 1vh 0; 
 }
 
 .home-tiles li{
@@ -56,11 +41,6 @@
   display: flex;
   flex-direction: row;
   background-color: #dddddd;
-}
-
-.home-moran ul {
-  padding-left: 0;
-  padding-right: 5px;
 }
 
 .home-ferkin {
@@ -97,4 +77,5 @@
 }
 
 .home-h1-2 {
+  align-text: justify;
 }
