@@ -14,7 +14,7 @@ class Contact extends Component {
     setEmail = ({ target: {value} })=>
         this.setState({
         email: value,
-        isEmailValid: value.includes('@' && '.co')
+        isEmailValid: value.includes('@' && '.' )
               })
     setTelNo1 = (event)=> this.setState({ telNo1: event.target.value });
     setTelNo2 = (event)=> this.setState({ telNo2: event.target.value });
