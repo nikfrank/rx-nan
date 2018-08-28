@@ -27,8 +27,19 @@
   padding: 1vh 0; 
 }
 
-.home-tiles li{
-  list-style: none;
+
+.home-ferkin {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: baseline;
+  padding-left: 2vw;
+}
+
+.home-ferkin img{
+  width:auto;
+  height: 15vh;
+  padding: 1vh 0;   
 }
 
 .home-jacob {
