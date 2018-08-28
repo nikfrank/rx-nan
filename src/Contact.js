@@ -28,7 +28,7 @@ class Contact extends Component {
       <div className='page'>
         <div className="form-container">
 
-          <h1 className="form-header">Send us your message here</h1>
+          <h1 className="form-header">Send us your message</h1>
 
           <div className='emailInvalid'>
             {
@@ -41,7 +41,7 @@ class Contact extends Component {
                 ) :null
               }
             </div>
-            
+
             <form id="form" class="topBefore">
               <input id="name" type="text" placeholder="NAME" onChange={this.setUserName} value={userName}/>
 
@@ -50,7 +50,7 @@ class Contact extends Component {
 
 
               <textarea id="message" type="text" placeholder="MESSAGE" onChange={this.setMessage} value={message}/>
-              <input id="submit" type="submit" value="SUBMIT" />
+              <input id="submit" class="ripple" type="submit" value="SUBMIT" />
 
               </form>
 
