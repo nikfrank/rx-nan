@@ -49,7 +49,9 @@ class Contact extends Component {
 
 
 
-              <textarea id="message" type="text" placeholder="MESSAGE" onChange={this.setMessage} value={message}/>
+                <div class="textarea__wrapper">
+                  <textarea countLimit={200} id="message" type="text" placeholder="MESSAGE" onChange={this.setMessage} value={message}/>
+                </div>
               <input id="submit" class="ripple" type="submit" value="SUBMIT" />
 
               </form>
