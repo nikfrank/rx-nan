@@ -22,7 +22,7 @@
 }
 
 .about-tiles ul {
-  margin-top: 11.5vh;
+  margin-top: 5.25vh;
 }
 
 .about-img-div img{
@@ -83,6 +83,7 @@
 }
 
 .about-tile {
+  height: 15vh;
   padding-bottom: 8%;
   padding-left: 3%;
 }
