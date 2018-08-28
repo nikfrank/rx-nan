@@ -13,8 +13,6 @@ import Issues from './Issues';
 import Contact from './Contact';
 
 
-
-
 class App extends Component {
   render() {
     return (
