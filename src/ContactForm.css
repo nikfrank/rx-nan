@@ -1,18 +1,24 @@
+.page {
+  display: flex;
+  flex-direction: column;
+}
 .form-container {
-  width: 75vw;
+  width: 90vw;
   display: flex;
   flex-flow: row wrap;
   font-family: 'Lato', sans-serif;
   background: #e2dedb;
   color: #b3aca7;
-
+  margin: 0 auto;
+  border-radius: 2px;
+  box-shadow: 2px 2px 12px 1px #bbbbbb;
 
 }
 
 .form-header {
 
-  width: 500px;
-  margin: auto;
+  width: 85vw;
+  margin: 0 auto;
   margin-bottom: 40px;
   letter-spacing: 7px;
   font-family: 'Lato', sans-serif;
@@ -266,18 +272,13 @@ textarea:hover {
 
   color:#A93F55 ;
   font-weight: 600;
-  margin: 16px;
-  width: 470px;
+  margin: 0 auto;
+  width: 90vw;
   height: 50px;
   padding: 0px 15px 0px 15px;
 
   background: transparent;
   outline: none;
-
-
-  border: solid 1px #b3aca7;
-  border-bottom: none;
-
   transition: all 0.3s ease-in-out;
 
 }

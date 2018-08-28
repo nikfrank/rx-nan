@@ -29,26 +29,26 @@ class Contact extends Component {
         <div className="form-container">
 
           <h1 className="form-header">Send us your message here</h1>
-          <br />
-          <br />
+        
+            {
+                !this.state.isEmailValid ? (
+                  <div className='emailInvalid'>
+                    <div className='emailRetry'>
+                      Please enter your email address
+                    </div>
+                  </div>
+                ) :null
+              }
 
             <form id="form" class="topBefore">
               <input id="name" type="text" placeholder="NAME" onChange={this.setUserName} value={userName}/>
 
               <input id="email" type="text" placeholder="E-MAIL" onChange={this.setEmail} value={email}/>
 
-              {
-                  !this.state.isEmailValid ? (
-                    <div className='emailInvalid'>
-                      <div className='emailRetry'>
-                        Please enter your email address
-                      </div>
-                    </div>
-                  ) :null
-                }
+
 
               <textarea id="message" type="text" placeholder="MESSAGE" onChange={this.setMessage} value={message}/>
-              <input id="submit" type="submit" value="GO!" />
+              <input id="submit" type="submit" value="SUBMIT" />
 
               </form>
 
