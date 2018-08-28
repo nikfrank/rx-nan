@@ -4,6 +4,8 @@ import Blood from './imgs/blood.svg';
 import Group from './imgs/group.svg';
 import Perscription from './imgs/prescription.svg';
 import Syringe from './imgs/syringe (1).svg';
+import Correct from './imgs/correct.svg'
+import X from './imgs/letter-x.svg'
 
 class Home extends Component{
   render(){
@@ -30,7 +32,10 @@ class Home extends Component{
           <div className='home-page-border-2'/>
           
           <div className='home-ferkin home-tile'>
-            tik tik tik tik
+            <img src={Correct}/>
+            <img src={Correct}/>
+            <img src={X}/>
+            <img src={Correct}/>
           </div>
           
           <div className='home-page-border-1'/>
