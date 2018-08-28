@@ -36,10 +36,10 @@ class Home extends Component{
           <div className='home-page-border-1'/>
           
           <div className='home-moran home-tile'>
-            <h1 className='home-h1-covered'>Covered</h1>
-            <h1 className='home-h1-covered'>Covered</h1>
-            <h1 className='home-h1-not-covered'>Not Covered</h1>
-            <h1 className='home-h1-2'>2 per a day</h1>
+            <h1 className='home-h1-covered'><br/>Covered</h1>
+            <h1 className='home-h1-covered'><br/>Covered</h1>
+            <h1 className='home-h1-not-covered'>Not<br/>Covered</h1>
+            <h1 className='home-h1-2'>2<br/>per day</h1>
           </div>
           
 
