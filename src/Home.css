@@ -1,0 +1,100 @@
+.home-tiles {
+  position: absolute;
+  width: 76vw;
+  left: 11.5vw;
+  background-color: #eeeeee;
+  border-radius: 2px;
+  box-shadow: 2px 2px 12px 1px #bbbbbb;
+  margin-bottom: 2%;
+  
+}
+
+.home-jacob {
+  display: flex;
+  justify-content: center;
+}
+
+.home-moran{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.home-moran img{
+  width:auto;
+  height: 20vh;
+}
+
+.home-tiles ul {
+  margin-top: 11.5vh;
+}
+
+.home-img-div img{
+  display: inline;
+  margin: 0 auto;
+  margin-left: -25%;
+  height: 100%;
+  width: auto;
+}
+
+.home-tiles ul{
+  width: 50%;
+  padding-left: none;
+}
+
+.home-tiles li{
+  list-style: none;
+}
+
+.home-jacob {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.home-moran {
+  display: flex;
+  flex-direction: row;
+  background-color: #dddddd;
+}
+
+.home-moran ul {
+  padding-left: 0;
+  padding-right: 5px;
+}
+
+.home-ferkin {
+  display: flex;
+  flex-direction: row;
+}
+
+.home-ferkin img {
+  margin-left: -6%;
+}
+
+.home-page-border-1 {
+  height: 4px;
+  width: 100%;
+  background: linear-gradient(to left, #ddd , #bbb);
+}
+
+.home-page-border-2 {
+  height:4px;
+  width: 100%;
+  background: linear-gradient(to right, #ddd , #bbb);
+}
+
+.home-tile {
+  width: 100%;
+}
+
+.home-h1-covered {
+  color: rgb(19, 80, 91)
+}
+
+.home-h1-not-covered {
+  color: rgb(169, 63, 85);
+}
+
+.home-h1-2 {
+}
