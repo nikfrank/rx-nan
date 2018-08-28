@@ -5,7 +5,7 @@ import Group from './imgs/group.svg';
 import Perscription from './imgs/prescription.svg';
 import Syringe from './imgs/syringe (1).svg';
 import Correct from './imgs/correct.svg'
-import X from './imgs/letter-x.svg'
+import X from './imgs/delete-button.svg'
 
 class Home extends Component{
   render(){
@@ -40,11 +40,11 @@ class Home extends Component{
           
           <div className='home-page-border-1'/>
           
-          <div className='home-moran home-tile'>
-            <h1 className='home-h1-covered'><br/>Covered</h1>
-            <h1 className='home-h1-covered'><br/>Covered</h1>
-            <h1 className='home-h1-not-covered'>Not<br/>Covered</h1>
-            <h1 className='home-h1-2'>2<br/>per day</h1>
+          <div className='home-moran home-tile home-tile-text'>
+            <h2 className='home-h1-covered'><br/>Covered</h2>
+            <h2 className='home-h1-covered'><br/>Covered</h2>
+            <h2 className='home-h1-not-covered'>Not<br/>Covered</h2>
+            <h2 className='home-h1-2'>2<br/>per day</h2>
           </div>
           
 

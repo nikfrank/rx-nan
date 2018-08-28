@@ -5,13 +5,18 @@
   background-color: #eeeeee;
   border-radius: 2px;
   box-shadow: 2px 2px 12px 1px #bbbbbb;
-  margin-bottom: 2%;
-  
+  margin-bottom: 2%;  
 }
 
 .home-jacob {
   display: flex;
   justify-content: center;
+}
+
+.home-jacob h1{
+  font-weight: 500;
+  text-shadow: 3px 3px 5px #bbbbbb;
+
 }
 
 .home-moran{
@@ -24,7 +29,7 @@
 .home-moran img{
   width:auto;
   height: 15vh;
-  padding: 1vh 0; 
+  padding: 3vh 0; 
 }
 
 
@@ -89,4 +94,8 @@
 
 .home-h1-2 {
   align-text: justify;
+}
+
+.home-tile-text h2{
+margin-left: -1.2vw;
 }
