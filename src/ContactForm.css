@@ -36,16 +36,17 @@ input {
   padding: 0px 15px 0px 15px;
   background: transparent;
   outline: none;
-  color: #726659;
+  color: ##13505B;
   border: solid 1px #13505B;
   border-bottom: none;
   transition: all 0.3s ease-in-out;
+
 
 }
 
 input:hover {
   background: #dddddd;
-  color: #e2dedb;
+  color: ##13505B;
 }
 
 textarea {
@@ -65,7 +66,7 @@ textarea {
 
 textarea:hover {
   background: #dddddd;
-  color: #e2dedb;
+  color: #13505B;
 }
 
 #submit {
@@ -82,11 +83,16 @@ textarea:hover {
 }
 
 #submit:hover {
-  color: #e2dedb;
+  color: #13505B;
   border-top: solid 1px #13505B;
 }
 
+.emailInvalid {
+  height: 0;
+}
+
 .emailRetry {
+  float: left;
   color:#A93F55 ;
   font-weight: 600;
   margin: 0 auto;

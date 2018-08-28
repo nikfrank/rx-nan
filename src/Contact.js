@@ -29,17 +29,19 @@ class Contact extends Component {
         <div className="form-container">
 
           <h1 className="form-header">Send us your message here</h1>
-        
+
+          <div className='emailInvalid'>
             {
                 !this.state.isEmailValid ? (
-                  <div className='emailInvalid'>
+
                     <div className='emailRetry'>
                       Please enter your email address
                     </div>
-                  </div>
+
                 ) :null
               }
-
+            </div>
+            
             <form id="form" class="topBefore">
               <input id="name" type="text" placeholder="NAME" onChange={this.setUserName} value={userName}/>
 
