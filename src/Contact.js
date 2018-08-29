@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import './ContactForm.css';
 import Textarea from './Textarea'
-
+import Correct from './imgs/correct.svg'
+import X from './imgs/delete-button.svg'
 
 class Contact extends Component {
     state = { userName: '',
@@ -10,7 +11,8 @@ class Contact extends Component {
               telNo2: '',
               telNo3: '',
               message: '',
-        }
+              submit: false,
+    }
 
     setUserName = (event)=> this.setState({userName: event.target.value});
     setEmail = ({ target: {value} })=>
@@ -21,7 +23,8 @@ class Contact extends Component {
     setTelNo1 = (event)=> this.setState({ telNo1: event.target.value });
     setTelNo2 = (event)=> this.setState({ telNo2: event.target.value });
     setTelNo3 = (event)=> this.setState({ telNo3: event.target.value });
-    setMessage = (event)=> this.setState({ message: event.target.value  });
+  setMessage = (event)=> this.setState({ message: event.target.value  });
+  setSubmit = (event)=> this.setState({ submit: event.target.value  });
 
   render() {
      const { userName, email, telNo1, telNo2, telNo3, message } = this.state;
@@ -33,23 +36,26 @@ class Contact extends Component {
           <h1 className="form-header">Send us your message</h1>
 
           <div className='emailInvalid'>
-            {
-              !this.state.isEmailValid ? (
-
-                <div className='emailRetry'>
-                  Please enter your email address
-                </div>
-
-              ) :null
-            }
+            
           </div>
 
           <form id="form" class="topBefore">
             <input id="name" type="text" placeholder="NAME" onChange={this.setUserName} value={userName}/>
 
-            <input id="email" type="text" placeholder="E-MAIL" onChange={this.setEmail} value={email}/>
-
-
+            <div className='contact-email-div'>
+              <input id="email" type="text" placeholder="E-MAIL" onChange={this.setEmail} value={email}/>
+              {
+                !!this.state.email.length ?
+                
+                !!this.state.isEmailValid ? (
+                  <img src={Correct}/> 
+                  
+                ) : (
+                  <img src={X} /> 
+                ) : null
+              }
+            </div>
+            
 
             <div >
               <Textarea
@@ -59,7 +65,7 @@ class Contact extends Component {
                 value={message}/>
               
             </div>
-            <input id="submit" type="submit" value="SUBMIT" />
+            <input id="submit" type="submit" value="SUBMIT" onChange={this.setSubmit} />
 
           </form>
 
