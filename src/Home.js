@@ -48,10 +48,7 @@ class Home extends Component{
             <h2 className='home-h1-2'>2<br/>per day</h2>
           </div>
 
-          <div className="foot">
-          <h2 className="credits">Nanci Frank</h2>
-          <img src ={Logo} className="logo"/>
-          </div>
+
 
 
         </div>
@@ -66,6 +63,10 @@ class Home extends Component{
           <div style={{color:'#F3F7F0'}}>#F3F7F0</div>
         </div>
 
+        <div className="foot">
+        <h2 className="credits">Nanci Frank</h2>
+        <img src ={Logo} className="logo"/>
+        </div>
 
       </div>
 

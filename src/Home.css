@@ -5,7 +5,8 @@
   background-color: #eeeeee;
   border-radius: 2px;
   box-shadow: 2px 2px 12px 1px #bbbbbb;
-  margin-bottom: 2%;
+  margin-bottom: 2px;
+
 }
 
 .home-jacob {
@@ -101,7 +102,9 @@ margin-left: -1.2vw;
 }
 
 .foot {
-  margin top: 50px;
+  height: 20px;
+  position: absolute;
+  bottom: 0;
   display: flex;
   flex direction: row;
   justify-content: space-between;
@@ -109,13 +112,11 @@ margin-left: -1.2vw;
 }
 
 .credits {
-
   font-size: 12px;
   padding-left: 20px;
   color: #C3C3E6;
 }
 
 .logo {
-
 
 }
