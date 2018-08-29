@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import './ContactForm.css';
+import Textarea from './Textarea'
+
 
 class Contact extends Component {
     state = { userName: '',
@@ -32,29 +34,34 @@ class Contact extends Component {
 
           <div className='emailInvalid'>
             {
-                !this.state.isEmailValid ? (
+              !this.state.isEmailValid ? (
 
-                    <div className='emailRetry'>
-                      Please enter your email address
-                    </div>
-
-                ) :null
-              }
-            </div>
-
-            <form id="form" class="topBefore">
-              <input id="name" type="text" placeholder="NAME" onChange={this.setUserName} value={userName}/>
-
-              <input id="email" type="text" placeholder="E-MAIL" onChange={this.setEmail} value={email}/>
-
-
-
-                <div class="textarea__wrapper">
-                  <textarea countLimit={200} id="message" type="text" placeholder="MESSAGE" onChange={this.setMessage} value={message}/>
+                <div className='emailRetry'>
+                  Please enter your email address
                 </div>
-              <input id="submit" class="ripple" type="submit" value="SUBMIT" />
 
-              </form>
+              ) :null
+            }
+          </div>
+
+          <form id="form" class="topBefore">
+            <input id="name" type="text" placeholder="NAME" onChange={this.setUserName} value={userName}/>
+
+            <input id="email" type="text" placeholder="E-MAIL" onChange={this.setEmail} value={email}/>
+
+
+
+            <div >
+              <Textarea
+                id="message"
+                type="text"
+                onChange={this.setMessage}
+                value={message}/>
+              
+            </div>
+            <input id="submit" type="submit" value="SUBMIT" />
+
+          </form>
 
         </div>
       </div>

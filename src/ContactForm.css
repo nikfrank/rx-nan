@@ -105,3 +105,9 @@ textarea:hover {
   outline: none;
   transition: all 0.3s ease-in-out;
 }
+
+.textarea-counter {
+  position: relative;
+  left: 17.1vw;
+  top: .5vh;
+}
