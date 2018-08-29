@@ -50,11 +50,12 @@ class Home extends Component{
 
           <div className="foot">
           <h2 className="credits">Nanci Frank</h2>
-          <img src= {Logo} />
+          <img src ={Logo} className="logo"/>
           </div>
 
 
         </div>
+
 
 
         <div className = "blurb" >

@@ -101,18 +101,21 @@ margin-left: -1.2vw;
 }
 
 .foot {
-  margin top: 20px;
+  margin top: 50px;
+  display: flex;
+  flex direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .credits {
-  display: flex;
-  justify-content: flex-start;
-  align-self: flex-end;
+
   font-size: 12px;
   padding-left: 20px;
   color: #C3C3E6;
 }
 
 .logo {
-   height: 14px;
+
+
 }
