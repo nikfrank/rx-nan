@@ -28,7 +28,7 @@ class Contact extends Component {
   submit = ()=> {
     fetch('https://55a1ixk7t8.execute-api.eu-west-1.amazonaws.com/default/test-api-gateway', {
       method: 'POST',
-      mode: 'cors',
+      mode: 'no-cors',
       cache: 'no-cache',
       headers: { 'Content-Type': 'application/json; charset=utf-8' },
       body: 'name: '+this.state.userName+
