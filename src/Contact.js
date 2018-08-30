@@ -12,7 +12,6 @@ class Contact extends Component {
     telNo2: "",
     telNo3: "",
     message: "",
-    submit: false
   };
 
   setUserName = event => this.setState({ userName: event.target.value });
@@ -25,19 +24,33 @@ class Contact extends Component {
   setTelNo2 = event => this.setState({ telNo2: event.target.value });
   setTelNo3 = event => this.setState({ telNo3: event.target.value });
   setMessage = event => this.setState({ message: event.target.value });
-  setSubmit = event => this.setState({ submit: event.target.value });
 
+  submit = ()=> {
+    fetch('https://55a1ixk7t8.execute-api.eu-west-1.amazonaws.com/default/test-api-gateway', {
+      method: 'POST',
+      mode: 'cors',
+      cache: 'no-cache',
+      headers: { 'Content-Type': 'application/json; charset=utf-8' },
+      body: 'name: '+this.state.userName+
+            ' email: '+this.state.email+
+            ' tel: '+this.state.telNo1+
+            '-'+this.state.telNo2+
+            '-'+this.state.telNo3+
+            ' message: '+this.state.message,
+    }).then(pon => console.log(pon, 'response from emailer'));
+  }
+  
   render() {
     const { userName, email, telNo1, telNo2, telNo3, message } = this.state;
 
     return (
       <div className="page">
         <div className="form-container">
-          <h1 className="form-header">Send us your message</h1>
+          <h1 className="form-header">Send Us Your Message</h1>
 
           <div className="emailInvalid" />
 
-          <form id="form" className="topBefore">
+          <div id='form' className="topBefore">
             <input
               id="name"
               type="text"
@@ -71,13 +84,8 @@ class Contact extends Component {
                 value={message}
               />
             </div>
-            <input
-              id="submit"
-              type="submit"
-              value="SUBMIT"
-              onChange={this.setSubmit}
-            />
-          </form>
+            <button className='submit' onClick={this.submit}>SUBMIT</button>
+          </div>
         </div>
       </div>
     );

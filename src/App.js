@@ -20,7 +20,7 @@ class App extends Component {
       <Router>
         <div className="App page">
           <nav>
-            <NavLink to="/home"><div className="logo">RX-nan</div></NavLink>
+            <NavLink to="/home"><div className="logo">Pharmacist Nanci</div></NavLink>
             <NavLink to="/issues"><div>The Issues</div></NavLink>            
             <NavLink to="/contact"><div>Contact</div></NavLink>
           </nav>
