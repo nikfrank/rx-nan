@@ -25,7 +25,7 @@
   margin-top: 5.25vh;
 }
 
-.about-img-div img{
+.about-img-div img {
   display: inline;
   margin: 0 auto;
   margin-left: -25%;
@@ -34,61 +34,74 @@
 }
 
 .about-tiles h2 {
-  color: #13505B;
+  color: #13505b;
 }
 
-.about-tiles ul{
+.about-tiles ul {
   height: 20%;
   width: 50%;
   padding-left: none;
 }
 
-.about-tiles li{
+.about-tiles li {
   list-style: none;
-  color: #688F96;
+  color: #688f96;
 }
 
-.about-jacob {
+.about-issue1 {
   display: flex;
   flex-direction: row;
 }
 
-
-.about-moran {
+.about-issue2 {
   display: flex;
   flex-direction: row;
   padding-right: 30px;
   background-color: #dddddd;
 }
 
-.about-moran ul {
+.about-issue2 ul {
   padding-left: 0;
   padding-right: 5px;
 }
 
-.about-ferkin {
+.about-issue3 {
   display: flex;
   flex-direction: row;
 }
 
-.about-ferkin img {
+.about-issue3 img {
   margin-left: -6%;
 }
 
 .about-page-border-1 {
   height: 4px;
   width: 100%;
-  background: linear-gradient(to left, #ddd , #bbb);
+  background: linear-gradient(to left, #ddd, #bbb);
 }
 
 .about-page-border-2 {
-  height:4px;
+  height: 4px;
   width: 100%;
-  background: linear-gradient(to right, #ddd , #bbb);
+  background: linear-gradient(to right, #ddd, #bbb);
 }
 
 .about-tile {
   height: 15vh;
   padding-bottom: 8%;
   padding-left: 3%;
+}
+
+.sadFace {
+  flex-grow: 1;
+  height: 155%;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.sadFace img {
+  height: 90px;
+  width: auto;
 }
