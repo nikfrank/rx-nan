@@ -42,7 +42,7 @@ class Issues extends Component {
               <p> To avoid bending or damage to the needle</p>
               <p>For injection comfort</p>
               <p>To maintain healthy injection sites</p>
-              <p>To potentially improve insuline absorption</p>
+              <p>To potentially improve insulin absorption</p>
             </div>
           </div>
         </div>

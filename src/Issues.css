@@ -1,6 +1,7 @@
 .about-tiles {
   position: absolute;
   width: 76vw;
+  height: 76vh;
   left: 11.5vw;
   background-color: #eeeeee;
   border-radius: 2px;
@@ -61,6 +62,7 @@
 .about-issue1-p-container {
   margin-top: 9vh;
   margin-left: 10vw;
+  font-family: "Anaheim", regular;
 }
 
 .about-issue2 {
@@ -106,8 +108,14 @@
   padding-left: 3%;
 }
 
+.about-tile:first-child {
+  height: 12vh;
+}
+
 .about-tile p {
   margin: 5px;
+  font-family: "Anaheim", regular;
+  color: #13505b;
 }
 
 .issue3-list {

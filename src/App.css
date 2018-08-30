@@ -68,9 +68,7 @@ nav a:visited {
   color: #13505b;
 }
 
-
 .foot {
-  height: 20px;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -87,7 +85,7 @@ nav a:visited {
 
 .logo {
   margin-left: -1.5vw;
-  margin-right: calc( 57vw - 250px );
+  margin-right: calc(57vw - 250px);
   min-width: 250px;
   font-family: "Kosugi Maru", regular;
   font-size: 30px;
