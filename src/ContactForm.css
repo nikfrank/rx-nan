@@ -67,8 +67,9 @@ textarea:hover {
   color: #13505b;
 }
 
-#submit {
+button.submit {
   width: 502px;
+  height: 50px;
   padding: 0;
   margin: 16px 0px 0px 0px;
   font-family: "Lato", sans-serif;
