@@ -4,14 +4,14 @@ import Textarea from "./Textarea";
 import Correct from "./imgs/correct.svg";
 import X from "./imgs/delete-button.svg";
 
+import spinner from "./imgs/fidget-spinner.gif";
+
 class Contact extends Component {
   state = {
     userName: "",
     email: "",
-    telNo1: "",
-    telNo2: "",
-    telNo3: "",
-    message: ""
+    message: "",
+    sending: false
   };
 
   setUserName = event => this.setState({ userName: event.target.value });
@@ -26,6 +26,8 @@ class Contact extends Component {
   setMessage = value => this.setState({ message: value });
 
   submit = () => {
+    this.setState({ sending: true });
+
     fetch(
       "https://55a1ixk7t8.execute-api.eu-west-1.amazonaws.com/default/test-api-gateway",
       {
@@ -41,18 +43,20 @@ class Contact extends Component {
           " message: " +
           this.state.message
       }
-    ).then(pon => console.log(pon, "response from emailer"));
+    ).then(pon =>
+      this.setState({ sending: false }, () =>
+        alert("Thanks for contacting Pharmacist Nanci")
+      )
+    );
   };
 
   render() {
-    const { userName, email, telNo1, telNo2, telNo3, message } = this.state;
+    const { userName, email, message, sending, isEmailValid } = this.state;
 
     return (
       <div className="page">
         <div className="form-container">
-          <h1 className="form-header">Send Us Your Message</h1>
-
-          <div className="emailInvalid" />
+          <h1 className="form-header">Get Involved!</h1>
 
           <div id="form" className="topBefore">
             <input
@@ -71,8 +75,8 @@ class Contact extends Component {
                 onChange={this.setEmail}
                 value={email}
               />
-              {!!this.state.email.length ? (
-                !!this.state.isEmailValid ? (
+              {!!email.length ? (
+                !!isEmailValid ? (
                   <img src={Correct} />
                 ) : (
                   <img src={X} />
@@ -88,8 +92,19 @@ class Contact extends Component {
                 value={message}
               />
             </div>
-            <button className="submit" onClick={this.submit}>
-              SUBMIT
+
+            <button
+              className="submit"
+              onClick={this.submit}
+              disabled={sending || !isEmailValid}
+            >
+              {!sending ? (
+                "SUBMIT"
+              ) : (
+                <div className="spin-holder">
+                  <img className="spinner" src={spinner} />
+                </div>
+              )}
             </button>
           </div>
         </div>

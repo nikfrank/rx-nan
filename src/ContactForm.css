@@ -81,14 +81,28 @@ button.submit {
   box-shadow: 2px 2px 6px 1px #bbbbbb;
 }
 
-#submit:hover {
+.submit:hover {
   color: #13505b;
   border-top: solid 1px #13505b;
   background-color: #b2b2d2;
 }
 
-.emailInvalid {
+.submit:disabled {
+  cursor: not-allowed;
+}
+
+.spin-holder {
+  position: relative;
   height: 0;
+}
+
+.spinner {
+  position: absolute;
+  top: -16px;
+  left: calc( 50% - 15px );
+  
+  max-height: 30px;
+  width: auto;
 }
 
 .emailRetry {
