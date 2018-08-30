@@ -6,7 +6,6 @@
   border-radius: 2px;
   box-shadow: 2px 2px 12px 1px #bbbbbb;
   margin-bottom: 2px;
-
 }
 
 .home-jacob {
@@ -14,25 +13,23 @@
   justify-content: center;
 }
 
-.home-jacob h1{
+.home-jacob h1 {
   font-weight: 500;
   text-shadow: 3px 3px 5px #bbbbbb;
-
 }
 
-.home-moran{
+.home-moran {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: baseline;
 }
 
-.home-moran img{
-  width:auto;
+.home-moran img {
+  width: auto;
   height: 15vh;
   padding: 3vh 0;
 }
-
 
 .home-ferkin {
   display: flex;
@@ -42,8 +39,8 @@
   padding-left: 2vw;
 }
 
-.home-ferkin img{
-  width:auto;
+.home-ferkin img {
+  width: auto;
   height: 10vh;
   padding: 6vh 0;
 }
@@ -52,7 +49,6 @@
   display: flex;
   flex-direction: row;
 }
-
 
 .home-moran {
   display: flex;
@@ -72,13 +68,13 @@
 .home-page-border-1 {
   height: 4px;
   width: 100%;
-  background: linear-gradient(to left, #ddd , #bbb);
+  background: linear-gradient(to left, #ddd, #bbb);
 }
 
 .home-page-border-2 {
-  height:4px;
+  height: 4px;
   width: 100%;
-  background: linear-gradient(to right, #ddd , #bbb);
+  background: linear-gradient(to right, #ddd, #bbb);
 }
 
 .home-tile {
@@ -86,7 +82,7 @@
 }
 
 .home-h1-covered {
-  color: rgb(19, 80, 91)
+  color: rgb(19, 80, 91);
 }
 
 .home-h1-not-covered {
@@ -97,8 +93,8 @@
   align-text: justify;
 }
 
-.home-tile-text h2{
-margin-left: -1.2vw;
+.home-tile-text h2 {
+  margin-left: -1.2vw;
 }
 
 .foot {
@@ -106,7 +102,7 @@ margin-left: -1.2vw;
   position: absolute;
   bottom: 0;
   display: flex;
-  flex direction: row;
+  flexdirection: row;
   justify-content: space-between;
   align-items: center;
 }
@@ -114,9 +110,8 @@ margin-left: -1.2vw;
 .credits {
   font-size: 12px;
   padding-left: 20px;
-  color: #C3C3E6;
+  color: #c3c3e6;
 }
 
 .logo {
-
 }

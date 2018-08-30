@@ -6,7 +6,7 @@
   width: 76.16vw;
   display: flex;
   flex-flow: row wrap;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   background-color: #eeeeee;
   color: #b3aca7;
   margin: 0 auto;
@@ -19,7 +19,7 @@
   margin: 0 auto;
   margin-bottom: 40px;
   letter-spacing: 5px;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 400;
 }
 
@@ -29,24 +29,22 @@
 }
 
 input {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 0.875em;
   width: 470px;
   height: 50px;
   padding: 0px 15px 0px 15px;
   background: transparent;
   outline: none;
-  color: ##13505B;
-  border: solid 1px #13505B;
+  color: ##13505b;
+  border: solid 1px #13505b;
   border-bottom: none;
   transition: all 0.3s ease-in-out;
-
-
 }
 
 input:hover {
   background: #dddddd;
-  color: ##13505B;
+  color: ##13505b;
 }
 
 textarea {
@@ -58,37 +56,35 @@ textarea {
   background: transparent;
   outline: none;
   color: #726659;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 0.875em;
-  border: solid 1px #13505B;
+  border: solid 1px #13505b;
   transition: all 0.3s ease-in-out;
 }
 
 textarea:hover {
   background: #dddddd;
-  color: #13505B;
+  color: #13505b;
 }
 
 #submit {
   width: 502px;
   padding: 0;
   margin: 16px 0px 0px 0px;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 0.875em;
-  background-color: #C3C3E6;
-  outline:none;
+  background-color: #c3c3e6;
+  outline: none;
   cursor: pointer;
-  border: solid 1px #13505B;
+  border: solid 1px #13505b;
   box-shadow: 2px 2px 6px 1px #bbbbbb;
-
 }
 
 #submit:hover {
-  color: #13505B;
-  border-top: solid 1px #13505B;
-  background-color: #B2B2D2;
+  color: #13505b;
+  border-top: solid 1px #13505b;
+  background-color: #b2b2d2;
 }
-
 
 .emailInvalid {
   height: 0;
@@ -96,7 +92,7 @@ textarea:hover {
 
 .emailRetry {
   float: left;
-  color:#A93F55 ;
+  color: #a93f55;
   font-weight: 600;
   margin: 0 auto;
   width: 76vw;
@@ -108,13 +104,18 @@ textarea:hover {
 
 .textarea-counter {
   position: relative;
-  left: 17.1vw;
-  top: .5vh;
+  left: 225px;
+  top: 0.5vh;
 }
 
-.contact-email-div img{
+.contact-email-div {
+  position: relative;
+}
+
+.contact-email-div img {
   position: absolute;
   height: 5vh;
-  left: 64.8vw;
-  top: 48vh;
+  left: 450px;
+  top: 8px;
+  z-index: 10;
 }
