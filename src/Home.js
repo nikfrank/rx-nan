@@ -3,6 +3,7 @@ import "./Home.css";
 import Blood from "./imgs/blood.svg";
 import Group from "./imgs/group.svg";
 import Perscription from "./imgs/prescription.svg";
+import Clock from "./imgs/clock-on-wall.svg";
 import Syringe from "./imgs/syringe (1).svg";
 import Correct from "./imgs/correct.svg";
 import X from "./imgs/delete-button.svg";
@@ -33,7 +34,7 @@ class Home extends Component {
             <img src={Correct} />
             <img src={Correct} />
             <img src={X} />
-            <img src={Correct} />
+            <img src={Clock} />
           </div>
 
           <div className="home-page-border-1" />

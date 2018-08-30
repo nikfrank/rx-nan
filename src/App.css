@@ -1,18 +1,18 @@
 .App {
   text-align: center;
-  background-color:#F3F7F0;
+  background-color: #f3f7f0;
 }
 
 p {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
 }
 
 body {
-  background-color: #f3f7f0
+  background-color: #f3f7f0;
 }
 
 .page {
-  background-color: #f3f7f0
+  background-color: #f3f7f0;
 }
 
 .App h1 {
@@ -29,26 +29,26 @@ body {
 }
 
 h1 {
-  font-family: 'Kosugi Maru', regular;
+  font-family: "Kosugi Maru", regular;
 }
 
 .logo {
   margin-left: -1.5vw;
-  padding-right: 47vw;
+  margin-right: 47vw;
   width: 150px;
-  font-family: 'Kosugi Maru', regular;
+  font-family: "Kosugi Maru", regular;
   font-size: 30px;
   opacity: 1;
 }
 
-.logo:hover{
+.logo:hover {
   text-shadow: 2px 2px 3px #dddddd;
 }
 
-nav a{
+nav a {
   padding: 20px 0 20px 0;
   line-height: 25px;
-  font-family: 'Anaheim', regular;
+  font-family: "Anaheim", regular;
   font-size: 20px;
   text-decoration: none;
 }
@@ -62,14 +62,14 @@ nav {
   margin-bottom: 1.5%;
   margin-left: 12vw;
   border-bottom: 3px solid #dddddd;
-  color: #C3C3E6;
+  color: #c3c3e6;
 }
 
 nav a div {
   width: 10vw;
 }
 
-nav a:not(:first-child){
+nav a:not(:first-child) {
   padding-top: 21px;
 }
 
@@ -78,6 +78,5 @@ nav a:hover {
 }
 
 nav a:visited {
-  color: #13505B;  
+  color: #13505b;
 }
-
