@@ -34,20 +34,16 @@ class Issues extends Component {
           <div className="about-page-border-2" />
 
           <div className="about-issue3 about-tile">
-            <div className="about-img-div" />
-            <ul>
-              <li>
-                <h2>
-                  {" "}
-                  Why is using a clean needle for each injection important?
-                </h2>
-              </li>
-              <li>To avoid clogging of the needle</li>
-              <li> To avoid bending or damage to the needle</li>
-              <li>For injection comfort</li>
-              <li>To maintain healthy injection sites</li>
-              <li>To potentially improve insuline absorption</li>
-            </ul>
+            <h2>
+              Why is using a clean needle <br /> for each injection important?
+            </h2>
+            <div>
+              <p>To avoid clogging of the needle</p>
+              <p> To avoid bending or damage to the needle</p>
+              <p>For injection comfort</p>
+              <p>To maintain healthy injection sites</p>
+              <p>To potentially improve insuline absorption</p>
+            </div>
           </div>
         </div>
       </div>
