@@ -11,7 +11,7 @@ class Contact extends Component {
     telNo1: "",
     telNo2: "",
     telNo3: "",
-    message: "",
+    message: ""
   };
 
   setUserName = event => this.setState({ userName: event.target.value });
@@ -25,18 +25,25 @@ class Contact extends Component {
   setTelNo3 = event => this.setState({ telNo3: event.target.value });
   setMessage = value => this.setState({ message: value });
 
-  submit = ()=> {
-    fetch('https://55a1ixk7t8.execute-api.eu-west-1.amazonaws.com/default/test-api-gateway', {
-      method: 'POST',
-      mode: 'no-cors',
-      cache: 'no-cache',
-      headers: { 'Content-Type': 'application/json; charset=utf-8' },
-      body: 'name: '+this.state.userName+
-            ' email: '+this.state.email+
-            ' message: '+this.state.message,
-    }).then(pon => console.log(pon, 'response from emailer'));
-  }
-  
+  submit = () => {
+    fetch(
+      "https://55a1ixk7t8.execute-api.eu-west-1.amazonaws.com/default/test-api-gateway",
+      {
+        method: "POST",
+        mode: "no-cors",
+        cache: "no-cache",
+        headers: { "Content-Type": "application/json; charset=utf-8" },
+        body:
+          "name: " +
+          this.state.userName +
+          " email: " +
+          this.state.email +
+          " message: " +
+          this.state.message
+      }
+    ).then(pon => console.log(pon, "response from emailer"));
+  };
+
   render() {
     const { userName, email, telNo1, telNo2, telNo3, message } = this.state;
 
@@ -47,7 +54,7 @@ class Contact extends Component {
 
           <div className="emailInvalid" />
 
-          <div id='form' className="topBefore">
+          <div id="form" className="topBefore">
             <input
               id="name"
               type="text"
@@ -81,7 +88,9 @@ class Contact extends Component {
                 value={message}
               />
             </div>
-            <button className='submit' onClick={this.submit}>SUBMIT</button>
+            <button className="submit" onClick={this.submit}>
+              SUBMIT
+            </button>
           </div>
         </div>
       </div>

@@ -3,10 +3,11 @@ import "./Home.css";
 import Blood from "./imgs/blood.svg";
 import Group from "./imgs/group.svg";
 import Perscription from "./imgs/prescription.svg";
-import Syringe from "./imgs/syringe (1).svg";
+import Syringe from "./imgs/penTips.svg";
 import Correct from "./imgs/correct.svg";
 import X from "./imgs/delete-button.svg";
 import Logo from "./imgs/capsloklogo.svg";
+import Danger from "./imgs/danger.svg";
 
 class Home extends Component {
   render() {
@@ -33,7 +34,7 @@ class Home extends Component {
             <img src={Correct} />
             <img src={Correct} />
             <img src={X} />
-            <img src={Correct} />
+            <img src={Danger} />
           </div>
 
           <div className="home-page-border-1" />
@@ -49,7 +50,7 @@ class Home extends Component {
               Not<br />Covered
             </h2>
             <h2 className="home-h1-2">
-              2<br />per day
+              Patients<br /> at risk
             </h2>
           </div>
         </div>
