@@ -15,7 +15,9 @@ class Home extends Component {
       <div className="page">
         <div className="home-tiles">
           <div className="home-jacob home-tile">
-            <h1 style={{ color: "black" }}>Help for coverage</h1>
+            <h1 style={{ color: "black" }}>
+              Insulin Injection Coverage in Ontario
+            </h1>
             <div className="home-img-div" />
           </div>
 
