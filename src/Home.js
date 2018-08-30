@@ -23,8 +23,11 @@ class Home extends Component {
 
           <div className="home-tile-second home-tile">
             <img src={Perscription} />
+
             <img src={Blood} />
+
             <img src={Syringe} />
+
             <img src={Group} />
           </div>
 
@@ -41,16 +44,16 @@ class Home extends Component {
 
           <div className="home-tile-second home-tile home-tile-text">
             <h2 className="home-h1-covered">
-              <br />Covered
+              <br /> Prescriptions are <br />Covered
             </h2>
             <h2 className="home-h1-covered">
-              <br />Covered
+              <br /> Pens are <br />Covered
             </h2>
             <h2 className="home-h1-not-covered">
-              Not<br />Covered
+              <br /> Pen tips are not<br />Covered
             </h2>
             <h2 className="home-h1-2">
-              Patients<br /> at risk
+              <br />Patients<br /> at Risk
             </h2>
           </div>
         </div>
