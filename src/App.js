@@ -11,6 +11,7 @@ import Home from './Home';
 import Work from './Work';
 import Issues from './Issues';
 import Contact from './Contact';
+import Logo from './imgs/capsloklogo.svg';
 
 
 class App extends Component {
@@ -30,6 +31,12 @@ class App extends Component {
             <Route exact path="/contact" component={Contact}/>
             <Redirect from='/' to='/home'/>
           </Switch>
+
+          <div className="foot">
+            <h2 className="credits">Nanci Frank</h2>
+            <img src ={Logo} className="logo"/>
+          </div>
+
         </div>
       </Router>
     );
