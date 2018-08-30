@@ -11,7 +11,7 @@ import Home from './Home';
 import Work from './Work';
 import Issues from './Issues';
 import Contact from './Contact';
-import Logo from './imgs/capsloklogo.svg';
+import Logo from './imgs/capslok-nobg.png';
 
 
 class App extends Component {
@@ -34,7 +34,7 @@ class App extends Component {
 
           <div className="foot">
             <h2 className="credits">Nanci Frank</h2>
-            <img src ={Logo} className="logo"/>
+            <div><img src={Logo} className="logo-cap"/></div>
           </div>
 
         </div>

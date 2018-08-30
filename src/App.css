@@ -32,19 +32,6 @@ h1 {
   font-family: "Kosugi Maru", regular;
 }
 
-.logo {
-  margin-left: -1.5vw;
-  margin-right: calc( 57vw - 250px );
-  min-width: 250px;
-  font-family: "Kosugi Maru", regular;
-  font-size: 30px;
-  opacity: 1;
-}
-
-.logo:hover {
-  text-shadow: 2px 2px 3px #dddddd;
-}
-
 nav a {
   padding: 20px 0 20px 0;
   line-height: 25px;
@@ -79,4 +66,34 @@ nav a:hover {
 
 nav a:visited {
   color: #13505b;
+}
+
+
+.foot {
+  height: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.foot img.logo-cap {
+  width: 180px;
+}
+
+.logo {
+  margin-left: -1.5vw;
+  margin-right: calc( 57vw - 250px );
+  min-width: 250px;
+  font-family: "Kosugi Maru", regular;
+  font-size: 30px;
+  opacity: 1;
+}
+
+.logo:hover {
+  text-shadow: 2px 2px 3px #dddddd;
 }
