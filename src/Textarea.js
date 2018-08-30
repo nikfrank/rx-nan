@@ -2,10 +2,11 @@ import React, { Component } from "react";
 
 class Textarea extends Component {
   state = {
-    message: ""
+    message: this.props.value
   };
 
-  setValue = ({ target: { value } }) => this.setState({ message: value });
+  setValue = ({ target: { value } }) => this.setState({ message: value },
+                                                      this.props.onChange(value) );
 
   render() {
     return (
