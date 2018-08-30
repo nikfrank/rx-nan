@@ -5,8 +5,8 @@ class Textarea extends Component {
     message: this.props.value
   };
 
-  setValue = ({ target: { value } }) => this.setState({ message: value },
-                                                      this.props.onChange(value) );
+  setValue = ({ target: { value } }) =>
+    this.setState({ message: value }, this.props.onChange(value));
 
   render() {
     return (
