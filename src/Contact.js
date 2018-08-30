@@ -23,7 +23,7 @@ class Contact extends Component {
   setTelNo1 = event => this.setState({ telNo1: event.target.value });
   setTelNo2 = event => this.setState({ telNo2: event.target.value });
   setTelNo3 = event => this.setState({ telNo3: event.target.value });
-  setMessage = event => this.setState({ message: event.target.value });
+  setMessage = value => this.setState({ message: value });
 
   submit = ()=> {
     fetch('https://55a1ixk7t8.execute-api.eu-west-1.amazonaws.com/default/test-api-gateway', {
@@ -33,9 +33,6 @@ class Contact extends Component {
       headers: { 'Content-Type': 'application/json; charset=utf-8' },
       body: 'name: '+this.state.userName+
             ' email: '+this.state.email+
-            ' tel: '+this.state.telNo1+
-            '-'+this.state.telNo2+
-            '-'+this.state.telNo3+
             ' message: '+this.state.message,
     }).then(pon => console.log(pon, 'response from emailer'));
   }
