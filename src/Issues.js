@@ -8,7 +8,7 @@ class Issues extends Component {
         <div className="about-tiles">
           <div className="about-issue1 about-tile">
             <h2>Patients need insulin tips</h2>
-            <div>
+            <div className="about-issue1-p-container">
               <p>
                 Insulin pen tips are required for subcutaneous injection of
                 insulin
@@ -34,10 +34,10 @@ class Issues extends Component {
           <div className="about-page-border-2" />
 
           <div className="about-issue3 about-tile">
-            <h2>
+            <h2 className="about-issues3-h2">
               Why is using a clean needle <br /> for each injection important?
             </h2>
-            <div>
+            <div className="issue3-list">
               <p>To avoid clogging of the needle</p>
               <p> To avoid bending or damage to the needle</p>
               <p>For injection comfort</p>
