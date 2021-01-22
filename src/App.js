@@ -43,6 +43,14 @@ class App extends Component {
               <img src={Logo} className="logo-cap" />
             </div>
           </div>
+
+          <div className='notice'>
+            <a href='http://chng.it/4fyPFgPD' target="_blank">
+              <span>Sign</span>
+              <span>the</span>
+              <span>Petition!</span>
+            </a>
+          </div>
         </div>
       </Router>
     );

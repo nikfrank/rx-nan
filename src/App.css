@@ -95,3 +95,67 @@ nav a:visited {
 .logo:hover {
   text-shadow: 2px 2px 3px #dddddd;
 }
+
+.notice {
+  position: fixed;
+
+  right: 14px;
+  top: 48vh;
+
+  height: 120px;
+  width: 120px;
+ 
+
+  line-height: 30px;
+
+  font-weight: bold;
+}
+
+.notice::before {
+  background-color: #088eb1;
+  content: "";
+  animation: pulse 6s infinite;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+
+  transition: 400ms all;
+}
+
+.notice:hover::before {
+  background-color: #86c306;
+}
+
+.notice a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 75%;
+  margin-top: 10%;
+  position: absolute;
+  width: 100%;
+
+  color: white !important;
+  text-decoration: none;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 #fff6;
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px #fff0;
+  }
+
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 #fff0;
+  }
+}
